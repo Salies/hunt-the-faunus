@@ -1,0 +1,52 @@
+body{
+    background:#1a1a1a;
+}
+
+.pentagons{
+    position:relative;
+    margin:0 auto;
+    width:375px;
+    height:375px;
+    border:3px solid black;
+    margin-bottom:25px;
+}
+
+.table, .ruby, .blake{
+    position: absolute;
+}
+
+.ruby, .blake{
+    width: 71px;
+    height: 71px;
+    margin: 3px 0 0 4px;
+    display:none;
+}
+
+.ruby, .blake{
+    z-index:1;
+}
+
+.wrapper{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    min-width:375px;
+    min-height:375px;
+}
+
+.console{
+    width:525px;
+    height:200px;
+    background:#000;
+    font-family: 'PT Mono', monospace;
+    color: #00FF00;
+    padding:25px;
+    overflow-y:scroll;
+}
+
+@media only screen and (max-width: 375px) {
+    .table{
+        width:100%;
+    }
+}
