@@ -70,6 +70,7 @@ function die(message, type){
     }
     else{
         color('blake', 1);
+        document.querySelector('.blake').style.display = 'block';
         print('<span style="color:#00FFFF;">YOU WON!</span> Press Enter to play again.<br><br>');
         paralysis = true;
     }
@@ -151,6 +152,7 @@ function start(n){ //contar número de caçadas (mudar caçador?)
     document.querySelector('.ruby').style.display = 'block';
 
     if(n===true){
+    		document.querySelector('.blake').style.display = 'none';
         terminal.innerHTML = "";
         print(`You have ${arrows} arrows. Hunt the faunus.<br><br>`);
         locations = [], usedLocations = [];
@@ -240,15 +242,3 @@ window.addEventListener("keydown", function(e){
         start();
     }
 });
-
-/*
-TODO
-- em funções com mesmo parâmetro (x,y) sintetizar na mesma, adicionando mais um arg
-
-TYPES
-- player 0
-- wumpus 1
-- hole 2 
-- bats 3 
-- arrow 4
-*/
