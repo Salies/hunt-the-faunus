@@ -8,7 +8,7 @@ terminal = document.querySelector('.console'),
 types = ['MediumPurple','IndianRed','grey','gold', 'darkorange','darkred'],
 triggers = [
 function(){ //wumpus
-    die('You got caught by the wumpus', 'lose')
+    die('You got caught by the faunus', 'lose')
 },
 function(){ //buraco
     die("You've fallen into the endless pit", 'lose')
@@ -52,7 +52,7 @@ function hint(){
             [wX + 1, wY - 1],
             [wX - 1, wY - 1]
         ],
-        calls = ['You smell a wumpus', 'You feel a breeze', 'You hear flapping'];
+        calls = ['You smell a faunus', 'You feel a breeze', 'You hear flapping'];
 
         for(i=0;i<posHint.length;i++){
             if(locations[0].x == posHint[i][0] && locations[0].y == posHint[i][1]){
